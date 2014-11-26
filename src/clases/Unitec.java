@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package progra1_25_11_2014_class;
+package clases;
 
 /**
  *
  * @author zerokull
  */
-public class Progra1_25_11_2014_Class {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Unitec {
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Declaremos e instanciemos un objeto de
+        //la clase Alumno
+        Alumno ken = new Alumno();
+        ken.edad = 18;
+        System.out.println(ken.edad);
     }
-    
 }
