@@ -14,7 +14,12 @@ public class Unitec {
         //Declaremos e instanciemos un objeto de
         //la clase Alumno
         Alumno ken = new Alumno();
-        ken.edad = 18;
-        System.out.println(ken.edad);
+        System.out.println("Edad Ken: "+ken.nombre+
+                ", Promedio: "+ken.promedio);
+        
+        Alumno rodri = new Alumno(25481365, "Jose Rodriguez");
+        rodri.promedio=80;
+        System.out.println("Edad Ken: "+rodri.nombre+
+                ", Promedio: "+rodri.promedio);
     }
 }

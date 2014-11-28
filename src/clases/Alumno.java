@@ -12,10 +12,22 @@ package clases;
 public class Alumno {
     //atributos que son caracteristicas que
     //describen la clase
-    public int numero, edad;
+    private int numero, edad;
     public String nombre;
     public double promedio;
     public char genero;
     public boolean matriculado;
     
+    //Constructor
+    public Alumno(){
+        promedio=0;
+        matriculado=false;
+        nombre="Pendiente";
+        System.out.println("SE LLAMO EL CONSTRUCTOR");
+    }
+    
+    public Alumno(int numero, String nombre){
+        this.numero=numero;
+        this.nombre=nombre;
+    }
 }

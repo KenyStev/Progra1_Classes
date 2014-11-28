@@ -11,12 +11,20 @@ package Rectangle;
  */
 public class Rectangle {
     public double width, height, area;
+
+    public Rectangle(double width, double height) {
+        this.width=width;
+        this.height=height;
+        this.area=width*height;
+    }
     
     public static void main(String[] args) {
-        Rectangle rect = new Rectangle();
-        rect.width=10;
-        rect.height=23;
-        rect.area = rect.width * rect.height;
+        Rectangle rect = new Rectangle(10, 23);
+        //rect.width=10;
+        //rect.height=23;
+        //rect.area = rect.width * rect.height;
+        System.out.println("Width: "+rect.width);
+        System.out.println("Height: "+rect.height);
         System.out.println("Area: "+rect.area);
     }
 }
