@@ -23,8 +23,14 @@ public class Rectangle {
         //rect.width=10;
         //rect.height=23;
         //rect.area = rect.width * rect.height;
-        System.out.println("Width: "+rect.width);
-        System.out.println("Height: "+rect.height);
-        System.out.println("Area: "+rect.area);
+//        System.out.println("Width: "+rect.width);
+//        System.out.println("Height: "+rect.height);
+//        System.out.println("Area: "+rect.area);
+        System.out.println(rect.toString());
+    }
+    
+    @Override
+    public String toString(){
+        return "Width: " + width + "\nHeight: "+ height + "\nArea: " + area;
     }
 }
