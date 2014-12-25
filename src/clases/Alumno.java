@@ -60,4 +60,16 @@ public class Alumno {
     public double getPromedio(){
         return promedio;
     }
+    
+    public boolean isMatriculado(){
+        return matriculado;
+    }
+    
+    public boolean validarNumero(int num){
+        return numero==num;
+    }
+    
+    public void print(){
+        System.out.printf("%d, Nombre: %s - Promedio: %.2f\n", numero, nombre, promedio);
+    }
 }
